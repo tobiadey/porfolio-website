@@ -355,14 +355,17 @@ button:focus {
 
 @media (max-width: 1000px){
     #photos {
-    columns:1;
-    column-gap:0%;
+
+    flex-direction: column;
     }
-    #photos img {
-        margin:2% 0px;
+    #photos a {
+        padding-bottom: 10px;
+        width: 300px;
+        height: 150px;
     }
-    #photos img:hover {
-        transform: scale(1);
+    #photos a:hover {
+        width: 300px;
+        height: 150px;
         cursor: pointer;
     }
     #rightImage {
